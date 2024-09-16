@@ -12,6 +12,7 @@
 		FB05F07B2C9855AF00AC03DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07A2C9855AF00AC03DE /* Assets.xcassets */; };
 		FB05F07F2C9855AF00AC03DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */; };
 		FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F08C2C985B0300AC03DE /* Creattures.swift */; };
+		FB05F09F2C985EC700AC03DE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FB05F09E2C985EC700AC03DE /* Localizable.xcstrings */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +23,7 @@
 		FB05F07C2C9855AF00AC03DE /* Math_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Math_Game.entitlements; sourceTree = "<group>"; };
 		FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB05F08C2C985B0300AC03DE /* Creattures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creattures.swift; sourceTree = "<group>"; };
+		FB05F09E2C985EC700AC03DE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				FB05F08C2C985B0300AC03DE /* Creattures.swift */,
+				FB05F09E2C985EC700AC03DE /* Localizable.xcstrings */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -170,6 +173,12 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
+				fr,
+				he,
+				it,
+				"pt-PT",
+				tr,
 			);
 			mainGroup = FB05F06A2C9855AE00AC03DE;
 			productRefGroup = FB05F0742C9855AE00AC03DE /* Products */;
@@ -188,6 +197,7 @@
 			files = (
 				FB05F07F2C9855AF00AC03DE /* Preview Assets.xcassets in Resources */,
 				FB05F07B2C9855AF00AC03DE /* Assets.xcassets in Resources */,
+				FB05F09F2C985EC700AC03DE /* Localizable.xcstrings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
