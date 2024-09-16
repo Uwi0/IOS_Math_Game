@@ -11,6 +11,7 @@
 		FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F0782C9855AE00AC03DE /* MainView.swift */; };
 		FB05F07B2C9855AF00AC03DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07A2C9855AF00AC03DE /* Assets.xcassets */; };
 		FB05F07F2C9855AF00AC03DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */; };
+		FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F08C2C985B0300AC03DE /* Creattures.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		FB05F07A2C9855AF00AC03DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB05F07C2C9855AF00AC03DE /* Math_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Math_Game.entitlements; sourceTree = "<group>"; };
 		FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		FB05F08C2C985B0300AC03DE /* Creattures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creattures.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +109,7 @@
 		FB05F0892C9856DF00AC03DE /* constants */ = {
 			isa = PBXGroup;
 			children = (
+				FB05F08C2C985B0300AC03DE /* Creattures.swift */,
 			);
 			path = constants;
 			sourceTree = "<group>";
@@ -196,6 +199,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */,
+				FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */,
 				FB05F0772C9855AE00AC03DE /* Math_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
