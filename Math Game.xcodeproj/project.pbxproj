@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		FB05F0772C9855AE00AC03DE /* Math_GameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F0762C9855AE00AC03DE /* Math_GameApp.swift */; };
-		FB05F0792C9855AE00AC03DE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F0782C9855AE00AC03DE /* ContentView.swift */; };
+		FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F0782C9855AE00AC03DE /* MainView.swift */; };
 		FB05F07B2C9855AF00AC03DE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07A2C9855AF00AC03DE /* Assets.xcassets */; };
 		FB05F07F2C9855AF00AC03DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -16,7 +16,7 @@
 /* Begin PBXFileReference section */
 		FB05F0732C9855AE00AC03DE /* Math Game.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Math Game.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB05F0762C9855AE00AC03DE /* Math_GameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math_GameApp.swift; sourceTree = "<group>"; };
-		FB05F0782C9855AE00AC03DE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		FB05F0782C9855AE00AC03DE /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		FB05F07A2C9855AF00AC03DE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB05F07C2C9855AF00AC03DE /* Math_Game.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Math_Game.entitlements; sourceTree = "<group>"; };
 		FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -52,8 +52,12 @@
 		FB05F0752C9855AE00AC03DE /* Math Game */ = {
 			isa = PBXGroup;
 			children = (
+				FB05F0892C9856DF00AC03DE /* constants */,
+				FB05F0882C9856D800AC03DE /* extensions */,
+				FB05F0872C9856CD00AC03DE /* model */,
+				FB05F0862C9856C900AC03DE /* viewModel */,
+				FB05F0852C9856C000AC03DE /* view */,
 				FB05F0762C9855AE00AC03DE /* Math_GameApp.swift */,
-				FB05F0782C9855AE00AC03DE /* ContentView.swift */,
 				FB05F07A2C9855AF00AC03DE /* Assets.xcassets */,
 				FB05F07C2C9855AF00AC03DE /* Math_Game.entitlements */,
 				FB05F07D2C9855AF00AC03DE /* Preview Content */,
@@ -67,6 +71,58 @@
 				FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB05F0852C9856C000AC03DE /* view */ = {
+			isa = PBXGroup;
+			children = (
+				FB05F08B2C9856F700AC03DE /* highScore */,
+				FB05F08A2C9856E800AC03DE /* additionGame */,
+				FB05F0782C9855AE00AC03DE /* MainView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		FB05F0862C9856C900AC03DE /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		FB05F0872C9856CD00AC03DE /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		FB05F0882C9856D800AC03DE /* extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = extensions;
+			sourceTree = "<group>";
+		};
+		FB05F0892C9856DF00AC03DE /* constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = constants;
+			sourceTree = "<group>";
+		};
+		FB05F08A2C9856E800AC03DE /* additionGame */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = additionGame;
+			sourceTree = "<group>";
+		};
+		FB05F08B2C9856F700AC03DE /* highScore */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = highScore;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,7 +195,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB05F0792C9855AE00AC03DE /* ContentView.swift in Sources */,
+				FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */,
 				FB05F0772C9855AE00AC03DE /* Math_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
