@@ -48,6 +48,16 @@ struct AdditionGameView: View {
                     gameVM.reset()
                 }
         }
+        .fullScreenCover(
+            isPresented: $showHighScoreView,
+            onDismiss: { gameVM.reset() }
+        ) {
+            Text("Enter New High Score!!!")
+        }
+        .onChange(of: showHighScore) { newValue in
+            showHighScoreView = newValue
+        }
+        
     }
 }
 
