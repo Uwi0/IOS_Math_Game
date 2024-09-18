@@ -21,6 +21,11 @@ class HighScoreViewModel {
     }
     
     func fetchHighScores() {
-        
+        let request = NSFetchRequest<HighScoreEntity>(entityName: "HighScoreEntity")
+        do {
+            highScores = try container.viewContext.fetch(request)
+        }catch let error {
+            print("Error fetching high scores: \(error.localizedDescription)")
+        }
     }
 }
