@@ -4,6 +4,10 @@ struct AdditionGameView: View {
     
     private var gameVM = MathGameViewModel()
     
+    private var showGameOverView: Bool {
+        gameVM.gameOver
+    }
+    
     var body: some View {
         ZStack {
             GameBackgroundView()
@@ -24,6 +28,18 @@ struct AdditionGameView: View {
                 Spacer()
                 OptionsView(gameVm: gameVM)
             }
+            .padding()
+            .blur(radius: showGameOverView ? 5 : 0)
+            .disabled(showGameOverView)
+            
+            GameOverView()
+                .padding()
+                .blur(radius: showGameOverView ? 0 : 30)
+                .opacity(showGameOverView ? 1 : 0)
+                .disabled(!showGameOverView)
+                .onTapGesture {
+                    gameVM.reset()
+                }
         }
     }
 }
