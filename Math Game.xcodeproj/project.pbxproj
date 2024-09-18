@@ -13,6 +13,7 @@
 		FB05F07F2C9855AF00AC03DE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */; };
 		FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB05F08C2C985B0300AC03DE /* Creattures.swift */; };
 		FB05F09F2C985EC700AC03DE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = FB05F09E2C985EC700AC03DE /* Localizable.xcstrings */; };
+		FB074A312C9A5601000BB71D /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A302C9A5601000BB71D /* ProblemModel.swift */; };
 		FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE686302C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld */; };
 		FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -26,6 +27,7 @@
 		FB05F07E2C9855AF00AC03DE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB05F08C2C985B0300AC03DE /* Creattures.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Creattures.swift; sourceTree = "<group>"; };
 		FB05F09E2C985EC700AC03DE /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		FB074A302C9A5601000BB71D /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
 		FBE686312C9A508A0040B8F0 /* HighScoresModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScoresModel.xcdatamodel; sourceTree = "<group>"; };
 		FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -103,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				FBE686302C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld */,
+				FB074A302C9A5601000BB71D /* ProblemModel.swift */,
 			);
 			path = model;
 			sourceTree = "<group>";
@@ -217,6 +220,7 @@
 				FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */,
 				FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */,
 				FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */,
+				FB074A312C9A5601000BB71D /* ProblemModel.swift in Sources */,
 				FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */,
 				FB05F0772C9855AE00AC03DE /* Math_GameApp.swift in Sources */,
 			);
