@@ -15,6 +15,14 @@ struct AdditionGameView: View {
                     level: gameVM.gameModel.level
                 )
                 Spacer()
+                BubbleView(
+                    txtColor: .white,
+                    bgColor: .purple.opacity(0.7),
+                    name: "bubble3",
+                    text: "\(gameVM.number1) + \(gameVM.number2)"
+                )
+                Spacer()
+                OptionsView(gameVm: gameVM)
             }
         }
     }
