@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -16,6 +16,8 @@
 		FB074A312C9A5601000BB71D /* ProblemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A302C9A5601000BB71D /* ProblemModel.swift */; };
 		FB074A332C9A5BEF000BB71D /* GameModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A322C9A5BEF000BB71D /* GameModel.swift */; };
 		FB074A352C9A5F6B000BB71D /* MathGameViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A342C9A5F6B000BB71D /* MathGameViewModel.swift */; };
+		FB074A3E2C9A67B4000BB71D /* AdditionGameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A3D2C9A67B4000BB71D /* AdditionGameView.swift */; };
+		FB074A402C9A67E9000BB71D /* HighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB074A3F2C9A67E9000BB71D /* HighScoreView.swift */; };
 		FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE686302C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld */; };
 		FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */; };
 /* End PBXBuildFile section */
@@ -32,9 +34,15 @@
 		FB074A302C9A5601000BB71D /* ProblemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProblemModel.swift; sourceTree = "<group>"; };
 		FB074A322C9A5BEF000BB71D /* GameModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameModel.swift; sourceTree = "<group>"; };
 		FB074A342C9A5F6B000BB71D /* MathGameViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathGameViewModel.swift; sourceTree = "<group>"; };
+		FB074A3D2C9A67B4000BB71D /* AdditionGameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdditionGameView.swift; sourceTree = "<group>"; };
+		FB074A3F2C9A67E9000BB71D /* HighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreView.swift; sourceTree = "<group>"; };
 		FBE686312C9A508A0040B8F0 /* HighScoresModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScoresModel.xcdatamodel; sourceTree = "<group>"; };
 		FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		FB074A362C9A64AB000BB71D /* background */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = background; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		FB05F0702C9855AE00AC03DE /* Frameworks */ = {
@@ -90,6 +98,7 @@
 		FB05F0852C9856C000AC03DE /* view */ = {
 			isa = PBXGroup;
 			children = (
+				FB074A362C9A64AB000BB71D /* background */,
 				FB05F08B2C9856F700AC03DE /* highScore */,
 				FB05F08A2C9856E800AC03DE /* additionGame */,
 				FB05F0782C9855AE00AC03DE /* MainView.swift */,
@@ -135,6 +144,7 @@
 		FB05F08A2C9856E800AC03DE /* additionGame */ = {
 			isa = PBXGroup;
 			children = (
+				FB074A3D2C9A67B4000BB71D /* AdditionGameView.swift */,
 			);
 			path = additionGame;
 			sourceTree = "<group>";
@@ -142,6 +152,7 @@
 		FB05F08B2C9856F700AC03DE /* highScore */ = {
 			isa = PBXGroup;
 			children = (
+				FB074A3F2C9A67E9000BB71D /* HighScoreView.swift */,
 			);
 			path = highScore;
 			sourceTree = "<group>";
@@ -160,6 +171,9 @@
 			buildRules = (
 			);
 			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				FB074A362C9A64AB000BB71D /* background */,
 			);
 			name = "Math Game";
 			productName = "Math Game";
@@ -224,12 +238,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */,
+				FB074A402C9A67E9000BB71D /* HighScoreView.swift in Sources */,
 				FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */,
 				FB074A352C9A5F6B000BB71D /* MathGameViewModel.swift in Sources */,
 				FB05F0792C9855AE00AC03DE /* MainView.swift in Sources */,
 				FB074A312C9A5601000BB71D /* ProblemModel.swift in Sources */,
 				FB05F08D2C985B0300AC03DE /* Creattures.swift in Sources */,
 				FB074A332C9A5BEF000BB71D /* GameModel.swift in Sources */,
+				FB074A3E2C9A67B4000BB71D /* AdditionGameView.swift in Sources */,
 				FB05F0772C9855AE00AC03DE /* Math_GameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
