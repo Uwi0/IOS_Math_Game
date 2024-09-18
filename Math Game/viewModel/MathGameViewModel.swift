@@ -1,8 +1,7 @@
 import Foundation
 
-@Observable
-class MathGameViewModel {
-    var gameModel: GameModel = GameModel.defaultValue
+class MathGameViewModel: ObservableObject {
+    @Published var gameModel: GameModel = GameModel.defaultValue
     
     
     var score: Int {

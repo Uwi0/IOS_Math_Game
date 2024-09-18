@@ -1,11 +1,17 @@
 import Foundation
 import CoreData
 
-@Observable
-class HighScoreViewModel {
-    let container: NSPersistentContainer
+class HighScoreViewModel: ObservableObject {
     
-    var highScores: [HighScoreEntity] = []
+    @Published var highScores: [HighScoreEntity] = []
+    
+    private let container: NSPersistentContainer
+    private let maxNumberOfHighScores: Int = 10
+    
+    var minHighScore: Int64? {
+        if highScores.isEmpty { return nil }
+        else { return highScores.last?.score }
+    }
     
     init() {
         container = NSPersistentContainer(name: "HighScoresModel")
@@ -56,5 +62,15 @@ class HighScoreViewModel {
     func deleteHighScore(entity: HighScoreEntity) {
         container.viewContext.delete(entity)
         saveHighScore()
+    }
+    
+    func isNewHighScore(score: Int) -> Bool {
+        if score <= 0 {
+            return false
+        } else if let minHighScore {
+            return minHighScore < score || highScores.count <= maxNumberOfHighScores
+        } else {
+            return true
+        }
     }
 }

@@ -2,10 +2,17 @@ import SwiftUI
 
 struct AdditionGameView: View {
     
-    private var gameVM = MathGameViewModel()
+    @StateObject private var gameVM = MathGameViewModel()
+    @EnvironmentObject private var highScoreVM: HighScoreViewModel
+    @State private var showHighScoreView: Bool = false
+    @State private var name: String = ""
     
     private var showGameOverView: Bool {
         gameVM.gameOver
+    }
+    
+    private var showHighScore: Bool {
+        gameVM.gameOver && highScoreVM.isNewHighScore(score: gameVM.score)
     }
     
     var body: some View {
@@ -46,4 +53,5 @@ struct AdditionGameView: View {
 
 #Preview {
     AdditionGameView()
+        .environmentObject(HighScoreViewModel())
 }
