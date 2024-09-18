@@ -42,6 +42,7 @@
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
 		FB074A362C9A64AB000BB71D /* background */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = background; sourceTree = "<group>"; };
+		FBA8CA0D2C9A9C2D003E1344 /* component */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = component; sourceTree = "<group>"; };
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +145,7 @@
 		FB05F08A2C9856E800AC03DE /* additionGame */ = {
 			isa = PBXGroup;
 			children = (
+				FBA8CA0D2C9A9C2D003E1344 /* component */,
 				FB074A3D2C9A67B4000BB71D /* AdditionGameView.swift */,
 			);
 			path = additionGame;
@@ -174,6 +176,7 @@
 			);
 			fileSystemSynchronizedGroups = (
 				FB074A362C9A64AB000BB71D /* background */,
+				FBA8CA0D2C9A9C2D003E1344 /* component */,
 			);
 			name = "Math Game";
 			productName = "Math Game";
