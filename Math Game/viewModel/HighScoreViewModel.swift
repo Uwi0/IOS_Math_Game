@@ -1,9 +1,10 @@
 import Foundation
 import CoreData
 
-class HighScoreViewModel: ObservableObject {
+@Observable
+class HighScoreViewModel {
     
-    @Published var highScores: [HighScoreEntity] = []
+    var highScores: [HighScoreEntity] = []
     
     private let container: NSPersistentContainer
     private let maxNumberOfHighScores: Int = 10

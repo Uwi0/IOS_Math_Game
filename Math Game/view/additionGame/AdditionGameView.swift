@@ -2,8 +2,8 @@ import SwiftUI
 
 struct AdditionGameView: View {
     
-    @StateObject private var gameVM = MathGameViewModel()
-    @EnvironmentObject private var highScoreVM: HighScoreViewModel
+    private var gameVM = MathGameViewModel()
+    @Environment(HighScoreViewModel.self) private var highScoreVM: HighScoreViewModel
     @State private var showHighScoreView: Bool = false
     @State private var name: String = ""
     
@@ -67,5 +67,5 @@ struct AdditionGameView: View {
 
 #Preview {
     AdditionGameView()
-        .environmentObject(HighScoreViewModel())
+        .environment(HighScoreViewModel())
 }

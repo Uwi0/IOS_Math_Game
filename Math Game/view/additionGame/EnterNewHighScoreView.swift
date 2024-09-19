@@ -5,7 +5,7 @@ struct EnterNewHighScoreView: View {
     let score: Int
     @Binding var name: String
     @Binding var isPresented: Bool
-    @EnvironmentObject var highScoreVM: HighScoreViewModel
+    @Environment(HighScoreViewModel.self) private var highScoreVM: HighScoreViewModel
     
     var body: some View {
         ZStack {
@@ -57,5 +57,5 @@ struct EnterNewHighScoreView: View {
         name: .constant("Peno"),
         isPresented: .constant(true)
     )
-    .environmentObject(HighScoreViewModel())
+    .environment(HighScoreViewModel())
 }

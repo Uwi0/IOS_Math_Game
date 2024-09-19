@@ -6,7 +6,7 @@ struct RankScoreView: View {
     let score: Int
     let entity: HighScoreEntity
     
-    @EnvironmentObject private var highScoreVM: HighScoreViewModel
+    @Environment(HighScoreViewModel.self) private var highScoreVM: HighScoreViewModel
     @State private var editMode = false
     @State private var name: String = ""
     @State private var save: Bool = false
