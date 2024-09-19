@@ -52,7 +52,11 @@ struct AdditionGameView: View {
             isPresented: $showHighScoreView,
             onDismiss: { gameVM.reset() }
         ) {
-            Text("Enter New High Score!!!")
+            EnterNewHighScoreView(
+                score: gameVM.score,
+                name: $name,
+                isPresented: $showHighScoreView
+            )
         }
         .onChange(of: showHighScore) { newValue in
             showHighScoreView = newValue
