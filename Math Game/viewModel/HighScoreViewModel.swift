@@ -55,7 +55,7 @@ class HighScoreViewModel: ObservableObject {
     }
     
     func updateHighScore(entity: HighScoreEntity,name: String) {
-        entity.name = name
+        entity.name = name.isEmpty ? (entity.name ?? "Anon") : name
         saveHighScore()
     }
     

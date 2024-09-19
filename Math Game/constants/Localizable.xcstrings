@@ -1,6 +1,9 @@
 {
   "sourceLanguage" : "en",
   "strings" : {
+    "%lld" : {
+      "shouldTranslate" : false
+    },
     "Anon" : {
       "extractionState" : "manual",
       "localizations" : {
@@ -47,6 +50,12 @@
           }
         }
       }
+    },
+    "Displaying score data" : {
+
+    },
+    "Enter Name" : {
+
     },
     "Game" : {
       "extractionState" : "manual",
