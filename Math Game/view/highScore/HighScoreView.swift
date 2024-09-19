@@ -13,6 +13,7 @@ struct HighScoreView: View {
                         let entity = highScoreVM.highScores[index]
                         RankScoreView(rank: index + 1, score: Int(entity.score), entity: entity)
                     }
+                    .onDelete(perform: highScoreVM.deleteScore)
                     .listRowBackground(Color.black)
                 }
                 .listStyle(.plain)
