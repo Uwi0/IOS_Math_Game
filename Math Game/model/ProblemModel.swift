@@ -13,8 +13,8 @@ struct ProblemModel: Identifiable {
     
     init (level: Int) {
         self.level = level
-        let lower = (level - 1) * 5
-        let upper = level * 5
+        let lower = level * 5
+        let upper = (level + 1) * 5
         self.number1 = Int.random(in: lower...upper)
         self.number2 = Int.random(in: lower...upper)
         let answer = number1 + number2
@@ -22,7 +22,7 @@ struct ProblemModel: Identifiable {
         var newSolutions: [Int] = []
         newSolutions.append(answer)
         newSolutions.append(answer + 10)
-        let belowAnswer = max(0, answer - 5)
+        let belowAnswer = answer - 5
         let aboveAnswer = answer + 5
         newSolutions.append(Int.random(in: answer+1...aboveAnswer))
         newSolutions.append(Int.random(in: belowAnswer..<answer))
