@@ -13,7 +13,9 @@ struct HighScoreView: View {
                         let entity = highScoreVM.highScores[index]
                         RankScoreView(rank: index + 1, score: Int(entity.score), entity: entity)
                     }
+                    .listRowBackground(Color.black)
                 }
+                .listStyle(.plain)
                 Image("creature0")
                     .resizable()
                     .frame(width: 100, height: 100)

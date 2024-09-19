@@ -41,12 +41,22 @@ struct RankScoreView: View {
                     }
                 )
             } else {
-                Text("Displaying score data")
-                    .onTapGesture {
-                        withAnimation {
-                            editMode.toggle()
-                        }
+                HStack {
+                    Text(rank.ordinal)
+                        .frame(maxWidth: .infinity)
+                    Text("\(score)")
+                        .frame(maxWidth: .infinity)
+                    Text(entity.name?.uppercased() ?? "name")
+                        .frame(maxWidth: .infinity)
+                }
+                .font(.headline)
+                .fontWeight(.semibold)
+                .foregroundColor(color)
+                .onTapGesture {
+                    withAnimation {
+                        editMode.toggle()
                     }
+                }
             }
             
         }

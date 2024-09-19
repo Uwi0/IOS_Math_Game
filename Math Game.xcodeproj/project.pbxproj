@@ -22,6 +22,7 @@
 		FBB0F5022C9C0B690058913A /* HighScoreTitleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5012C9C0B690058913A /* HighScoreTitleView.swift */; };
 		FBB0F5042C9C0B7E0058913A /* VTextImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5032C9C0B7E0058913A /* VTextImageView.swift */; };
 		FBB0F5182C9C2AA00058913A /* RankScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5172C9C2AA00058913A /* RankScoreView.swift */; };
+		FBB0F51A2C9C30ED0058913A /* NumericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5192C9C30ED0058913A /* NumericExtension.swift */; };
 		FBC2AF9A2C9B048A000C957A /* EnterNewHighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2AF992C9B048A000C957A /* EnterNewHighScoreView.swift */; };
 		FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FBE686302C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld */; };
 		FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */; };
@@ -45,6 +46,7 @@
 		FBB0F5012C9C0B690058913A /* HighScoreTitleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreTitleView.swift; sourceTree = "<group>"; };
 		FBB0F5032C9C0B7E0058913A /* VTextImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VTextImageView.swift; sourceTree = "<group>"; };
 		FBB0F5172C9C2AA00058913A /* RankScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankScoreView.swift; sourceTree = "<group>"; };
+		FBB0F5192C9C30ED0058913A /* NumericExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericExtension.swift; sourceTree = "<group>"; };
 		FBC2AF992C9B048A000C957A /* EnterNewHighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewHighScoreView.swift; sourceTree = "<group>"; };
 		FBE686312C9A508A0040B8F0 /* HighScoresModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = HighScoresModel.xcdatamodel; sourceTree = "<group>"; };
 		FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		FB05F0882C9856D800AC03DE /* extensions */ = {
 			isa = PBXGroup;
 			children = (
+				FBB0F5192C9C30ED0058913A /* NumericExtension.swift */,
 			);
 			path = extensions;
 			sourceTree = "<group>";
@@ -256,6 +259,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */,
+				FBB0F51A2C9C30ED0058913A /* NumericExtension.swift in Sources */,
 				FB074A402C9A67E9000BB71D /* HighScoreView.swift in Sources */,
 				FBE686322C9A508A0040B8F0 /* HighScoresModel.xcdatamodeld in Sources */,
 				FB074A352C9A5F6B000BB71D /* MathGameViewModel.swift in Sources */,
