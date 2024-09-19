@@ -58,8 +58,8 @@ struct AdditionGameView: View {
                 isPresented: $showHighScoreView
             )
         }
-        .onChange(of: showHighScore) { newValue in
-            showHighScoreView = newValue
+        .onChange(of: showHighScore) {
+            showHighScoreView = showHighScore
         }
         
     }
