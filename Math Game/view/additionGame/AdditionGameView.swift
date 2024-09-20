@@ -8,7 +8,8 @@ struct AdditionGameView: View {
     
     @State private var showHighScoreView: Bool = false
     @State private var name: String = ""
-    @Query var highScores: [HighScoreEntity] = []
+    @Query(sort: [SortDescriptor(\HighScoreEntity.score, order: .reverse)])
+    private var highScores: [HighScoreEntity]
     
     private var showGameOverView: Bool {
         gameVM.gameOver
@@ -16,11 +17,7 @@ struct AdditionGameView: View {
     
     private var minHighScore: Int? {
         if highScores.isEmpty { return nil }
-        else { return orderedHighScores.last?.score }
-    }
-    
-    var orderedHighScores: [HighScoreEntity] {
-        highScores.sorted{ score1, score2 in score1.score > score2.score }
+        else { return highScores.last?.score }
     }
     
     private var showHighScore: Bool {

@@ -7,7 +7,9 @@ struct RankScoreView: View {
     let score: Int
     let entity: HighScoreEntity
     
-    @Query private var highScore: [HighScoreEntity] = []
+    
+    @Query(sort: [SortDescriptor(\HighScoreEntity.score, order: .reverse)])
+    private var highScore: [HighScoreEntity]
     @Environment(\.modelContext) var modelContext
     @State private var editMode = false
     @State private var name: String = ""

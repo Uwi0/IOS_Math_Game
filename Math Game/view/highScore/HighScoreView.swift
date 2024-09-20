@@ -3,11 +3,9 @@ import SwiftData
 
 struct HighScoreView: View {
     
-    @Query private var highscores: [HighScoreEntity] = []
+    @Query(sort: [SortDescriptor(\HighScoreEntity.score, order: .reverse)])
+    private var highscores: [HighScoreEntity]
     @Environment(\.modelContext) var modelContext
-    var orderedHighScores: [HighScoreEntity] {
-        highscores.sorted{ score1, score2 in score1.score > score2.score }
-    }
     
     var body: some View {
         ZStack {
