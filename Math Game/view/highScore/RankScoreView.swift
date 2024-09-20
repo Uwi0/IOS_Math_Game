@@ -1,4 +1,5 @@
 import SwiftUI
+import SwiftData
 
 struct RankScoreView: View {
     
@@ -6,7 +7,8 @@ struct RankScoreView: View {
     let score: Int
     let entity: HighScoreEntity
     
-    @Environment(HighScoreViewModel.self) private var highScoreVM: HighScoreViewModel
+    @Query private var highScore: [HighScoreEntity] = []
+    @Environment(\.modelContext) var modelContext
     @State private var editMode = false
     @State private var name: String = ""
     @State private var save: Bool = false
@@ -19,7 +21,7 @@ struct RankScoreView: View {
     var body: some View {
         HStack {
             if editMode {
-                TextField(entity.name ?? "name", text: $name)
+                TextField(entity.name, text: $name)
                     .padding()
                     .background(.green.gradient)
                     .foregroundStyle(.black)
@@ -27,7 +29,7 @@ struct RankScoreView: View {
                 
                 Button(
                     action: {
-                        highScoreVM.updateHighScore(entity: entity, name: name)
+                        
                         withAnimation {
                             editMode.toggle()
                         }
@@ -46,7 +48,7 @@ struct RankScoreView: View {
                         .frame(maxWidth: .infinity)
                     Text("\(score)")
                         .frame(maxWidth: .infinity)
-                    Text(entity.name?.uppercased() ?? "name")
+                    Text(entity.name.uppercased())
                         .frame(maxWidth: .infinity)
                 }
                 .font(.headline)
@@ -60,5 +62,15 @@ struct RankScoreView: View {
             }
             
         }
+    }
+    
+    private func updateName() {
+        entity.name = name.isEmpty ? entity.name : name
+        do {
+            try modelContext.save()
+        } catch let error {
+            print("Error saving: \(error)")
+        }
+        
     }
 }
