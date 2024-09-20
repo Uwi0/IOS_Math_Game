@@ -3,9 +3,9 @@ import SwiftData
 
 @Model
 class HighScoreEntity: Identifiable {
-    let id = UUID()
+    var id = UUID()
     var name: String
-    let score: Int
+    var score: Int
     
     init(name: String, score: Int) {
         self.name = name
