@@ -31,7 +31,7 @@ struct RankScoreView: View {
                 
                 Button(
                     action: {
-                        
+                        updateName()
                         withAnimation {
                             editMode.toggle()
                         }
