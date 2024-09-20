@@ -25,7 +25,6 @@
 		FBB0F5182C9C2AA00058913A /* RankScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5172C9C2AA00058913A /* RankScoreView.swift */; };
 		FBB0F51A2C9C30ED0058913A /* NumericExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBB0F5192C9C30ED0058913A /* NumericExtension.swift */; };
 		FBC2AF9A2C9B048A000C957A /* EnterNewHighScoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBC2AF992C9B048A000C957A /* EnterNewHighScoreView.swift */; };
-		FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,7 +48,6 @@
 		FBB0F5172C9C2AA00058913A /* RankScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RankScoreView.swift; sourceTree = "<group>"; };
 		FBB0F5192C9C30ED0058913A /* NumericExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumericExtension.swift; sourceTree = "<group>"; };
 		FBC2AF992C9B048A000C957A /* EnterNewHighScoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterNewHighScoreView.swift; sourceTree = "<group>"; };
-		FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighScoreViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -122,7 +120,6 @@
 		FB05F0862C9856C900AC03DE /* viewModel */ = {
 			isa = PBXGroup;
 			children = (
-				FBE686332C9A50EC0040B8F0 /* HighScoreViewModel.swift */,
 				FB074A342C9A5F6B000BB71D /* MathGameViewModel.swift */,
 			);
 			path = viewModel;
@@ -209,7 +206,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1540;
-				LastUpgradeCheck = 1540;
+				LastUpgradeCheck = 1600;
 				TargetAttributes = {
 					FB05F0722C9855AE00AC03DE = {
 						CreatedOnToolsVersion = 15.4;
@@ -258,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FBE686342C9A50EC0040B8F0 /* HighScoreViewModel.swift in Sources */,
 				FBB0F51A2C9C30ED0058913A /* NumericExtension.swift in Sources */,
 				FB67CB002C9D54DC00DC620D /* HighScoreEntity.swift in Sources */,
 				FB074A402C9A67E9000BB71D /* HighScoreView.swift in Sources */,
@@ -285,6 +281,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -314,6 +311,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -346,6 +344,7 @@
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -375,6 +374,7 @@
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				DEAD_CODE_STRIPPING = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -402,6 +402,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Math Game/Math_Game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Math Game/Preview Content\"";
 				DEVELOPMENT_TEAM = RF2V894835;
 				ENABLE_HARDENED_RUNTIME = YES;
@@ -440,6 +441,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Math Game/Math_Game.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEAD_CODE_STRIPPING = YES;
 				DEVELOPMENT_ASSET_PATHS = "\"Math Game/Preview Content\"";
 				DEVELOPMENT_TEAM = RF2V894835;
 				ENABLE_HARDENED_RUNTIME = YES;

@@ -1,18 +1,30 @@
 import SwiftUI
+import SwiftData
 
 struct AdditionGameView: View {
     
     private var gameVM = MathGameViewModel()
-    @Environment(HighScoreViewModel.self) private var highScoreVM: HighScoreViewModel
+    private let maxNumberOfHighScores: Int = 10
+    
     @State private var showHighScoreView: Bool = false
     @State private var name: String = ""
+    @Query var highScores: [HighScoreEntity] = []
     
     private var showGameOverView: Bool {
         gameVM.gameOver
     }
     
+    private var minHighScore: Int? {
+        if highScores.isEmpty { return nil }
+        else { return orderedHighScores.last?.score }
+    }
+    
+    var orderedHighScores: [HighScoreEntity] {
+        highScores.sorted{ score1, score2 in score1.score > score2.score }
+    }
+    
     private var showHighScore: Bool {
-        gameVM.gameOver && highScoreVM.isNewHighScore(score: gameVM.score)
+        gameVM.gameOver && isNewHighScore(score: gameVM.score)
     }
     
     var body: some View {
@@ -63,9 +75,19 @@ struct AdditionGameView: View {
         }
         
     }
+    
+    private func isNewHighScore(score: Int) -> Bool {
+        if score <= 0 {
+            return false
+        } else if let minHighScore {
+            return minHighScore < score || highScores.count <= maxNumberOfHighScores
+        } else {
+            return true
+        }
+    }
 }
 
 #Preview {
     AdditionGameView()
-        .environment(HighScoreViewModel())
+        .modelContainer(for: HighScoreEntity.self)
 }
